@@ -31,6 +31,8 @@ build:
 deploy:
   image: alpine
   stage: deploy
+   before_script:
+    - sed -i 's/dl-cdn.alpinelinux.org/mirrors.tuna.tsinghua.edu.cn/g' /etc/apk/repositories
   script: 
     - echo "==== docs deploy ===="
     - apk add --no-cache rsync openssh

@@ -40,7 +40,7 @@ deploy:
     - echo "$SSH_PRIVATE_KEY" >> ~/.ssh/id_dsa
     - chmod 600 ~/.ssh/id_dsa
     - echo -e "Host 10.2.28.253\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
-    - rsync -rav --delete docs/.vuepress/dist/ root@10.2.28.253:/root/cloudwise/test/
+    - rsync -rav  -e 'ssh -p 36000' --delete docs/.vuepress/dist/ root@10.2.28.253:/root/cloudwise/test/
   only:
     - master
   tags: 

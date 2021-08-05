@@ -23,7 +23,7 @@ build:
   script:
     - echo "==== docs build ===="
     - yarn docs:build
-    - tar zcvf target/dist-$$CI_COMMIT_REF_NAME.tar.gz docs/.vuepress/dist
+    - tar zcvf target/dist-$CI_COMMIT_REF_NAME.tar.gz docs/.vuepress/dist
   tags:
     - rdep-docs
   artifacts:

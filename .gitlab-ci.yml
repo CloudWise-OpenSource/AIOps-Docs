@@ -35,6 +35,7 @@ build_install:
 deploy:
   stage: deploy
   script: 
+    - echo "==== docs build ===="
     # - gitbook build . /data/gitbook/ --debug
     # - gitbook serve --port 80
   only:

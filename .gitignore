@@ -1,0 +1,8 @@
+node_modules
+.vscode
+.idea
+.DS_Store
+nohup.out
+node_modules
+target/*
+!target/.gitkeep

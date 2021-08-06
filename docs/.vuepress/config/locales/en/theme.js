@@ -4,7 +4,6 @@ module.exports = {
 
     searchPlaceholder: 'Search Docs',
     
-    editLinkText: 'Edit this page',
     lastUpdated: 'Last Updated',
 
     nav: require('./nav'),

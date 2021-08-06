@@ -1,5 +1,5 @@
 module.exports = {
-  '/en/gaia/': [
+  '/zh/gaia/': [
     {
       title: 'Generic AIOps Atlas',
       collapsable: false,

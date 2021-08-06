@@ -1,38 +1,16 @@
 module.exports = {
-  '/zh/gaia/': [
+  '/en/gaia/': [
     {
-      title: '核心概念',
+      title: 'Generic AIOps Atlas',
       collapsable: false,
       children: [
         '',
-        ['start','起步'],
+        'overview',
+        'description',
+        'tasks'
       ]
     },
-    {
-      title: '高级指引',
-      collapsable: false,
-      children: [
-        'console',
-        'post-types',
-        'search',
-        'testing',
-      ]
-    },
-    // {
-    //   title: 'Themes',
-    //   collapsable: false,
-    //   children: [
-    //     'theme',
-    //   ]
-    // },
-    // {
-    //   title: 'Localization',
-    //   collapsable: false,
-    //   children: [
-    //   ]
-    // }
   ],
-
   '/zh/': [
     {
       title: '介绍',

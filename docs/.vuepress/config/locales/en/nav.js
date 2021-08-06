@@ -4,8 +4,9 @@ module.exports = [
     {
       text: 'CloudWise',
       items: [
-        { text: 'Home', link: 'https://www.cloudwise.com/en/' },
-        { text: 'Community', link: 'https://10.2.3.211/' },
+        { text: 'Home', link: 'https://10.2.3.211/' },
+        { text: 'Official', link: 'https://www.cloudwise.com/en/' },
+        { text: 'Community', link: 'https://10.2.3.211:8001/' },
       ]
     }
   ]

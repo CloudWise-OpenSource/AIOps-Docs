@@ -13,7 +13,6 @@ module.exports = ctx => ({
     ['script', {id: "scriptImporter"}, `
         (function() { 
         var script = document.createElement("script"); 
-        script.src = "/js/i18n.js";
         setTimeout(() => document.body.append(script))
         })(); 
     `]
@@ -30,7 +29,6 @@ module.exports = ctx => ({
 
     docsRepo: 'flarum/docs',
     docsDir: 'docs',
-    editLinks: true,
 
     locales: locales.theme(),
   },

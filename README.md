@@ -69,7 +69,7 @@ CICD运行状态
 以中文文档为例
 样式文件位于`docs/.vuepress/config/locales/zh/sidebar.js`
 
-```Javascript
+```javascript
   ...
 
   '/zh/gaia/': [ //目录，gaia代表zh目录下的gaia分类文件夹

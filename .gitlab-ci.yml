@@ -36,8 +36,8 @@ deploy:
     - mkdir -p ~/.ssh
     - echo "$SSH_PRIVATE_KEY" >> ~/.ssh/id_dsa
     - chmod 600 ~/.ssh/id_dsa
-    - echo -e "Host 106.75.96.186\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
-    - rsync -rav  -e 'ssh -p 36000' --exclude ".user.ini" --delete docs/.vuepress/dist/  root@106.75.96.186:/data/app/docs
+    - echo -e "Host $DEPLOY_HOST\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
+    - rsync -rav  -e 'ssh -p 36000' --delete docs/.vuepress/dist/  $DEPLOY_USER@$DEPLOY_HOST:/data/app/docs
   only:
     - master
   tags: 

@@ -1,17 +1,4 @@
 module.exports = {
-  '/en/gaia/': [
-    {
-      title: 'Generic AIOps Atlas',
-      collapsable: false,
-      children: [
-        '',
-        'overview',
-        'description',
-        'tasks'
-      ]
-    },
-  ],
-
   '/en/': [
     {
       title: 'Introduction',
@@ -56,4 +43,27 @@ module.exports = {
       ]
     }
   ],
+
+  '/en/gaia/': [
+    {
+      title: 'Generic AIOps Atlas',
+      collapsable: false,
+      children: [
+        '',
+        'overview',
+        'description',
+        'tasks'
+      ]
+    },
+  ],
+
+  '/en/hours/': [
+    {
+      title: 'Hours',
+      collapsable: false,
+      children: [
+        '',
+      ]
+    },
+  ]
 }

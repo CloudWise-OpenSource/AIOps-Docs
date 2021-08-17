@@ -1,4 +1,4 @@
 module.exports = {
     lang: 'en',
-    title: 'Flarum Documentation',
+    title: 'CloudWise Documentation',
 }

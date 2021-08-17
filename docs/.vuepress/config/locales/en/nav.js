@@ -1,6 +1,7 @@
 module.exports = [
     { text: 'Guide', link: '/en/' },
     { text: 'GAIA', link: '/en/gaia/' },
+    { text: 'Hours', link: '/en/hours/' },
     {
       text: 'CloudWise',
       items: [

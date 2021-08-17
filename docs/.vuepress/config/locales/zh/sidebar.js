@@ -1,16 +1,4 @@
 module.exports = {
-  '/zh/gaia/': [
-    {
-      title: 'Generic AIOps Atlas',
-      collapsable: false,
-      children: [
-        '',
-        'overview',
-        'description',
-        'tasks'
-      ]
-    },
-  ],
   '/zh/': [
     {
       title: '介绍',
@@ -46,5 +34,28 @@ module.exports = {
         '线性回归预测算法文档'
       ]
     }
-  ]
+  ],
+
+  '/zh/gaia/': [
+    {
+      title: 'Generic AIOps Atlas',
+      collapsable: false,
+      children: [
+        '',
+        'overview',
+        'description',
+        'tasks'
+      ]
+    },
+  ],
+  
+  '/en/hours/': [
+    {
+      title: 'Hours',
+      collapsable: false,
+      children: [
+        '',
+      ]
+    },
+  ],
 }

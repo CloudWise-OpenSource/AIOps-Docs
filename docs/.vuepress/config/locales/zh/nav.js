@@ -1,6 +1,7 @@
 module.exports = [
     { text: '摩尔平台', link: '/zh/' },
     { text: 'GAIA', link: '/zh/gaia/' },
+    { text: 'Hours', link: '/zh/hours/' },
     {
       text: 'CloudWise',
       items: [

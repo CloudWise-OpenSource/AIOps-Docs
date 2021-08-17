@@ -16,7 +16,7 @@ build:
     paths:
       - node_modules/ # Node modules and dependencies
   tags:
-    - rdep-docs
+    - rdep-common
   artifacts:
     name: "artifacts_$CI_COMMIT_REF_NAME_$CI_COMMIT_SHORT_SHA"
     expire_in: 3 day
@@ -24,8 +24,24 @@ build:
       - docs/.vuepress/dist
 
     
-# the 'pages' job will deploy and build your site to the 'public' path
-deploy:
+deploy_to_test:
+  image: alpine
+  stage: deploy
+  before_script:
+    - sed -i 's/dl-cdn.alpinelinux.org/mirrors.tuna.tsinghua.edu.cn/g' /etc/apk/repositories
+  script: 
+    - echo "==== docs deploy ===="
+    - apk add --no-cache rsync openssh
+    - mkdir -p ~/.ssh
+    - echo "$TEST_SSH_PRIVATE_KEY" >> ~/.ssh/id_dsa
+    - chmod 600 ~/.ssh/id_dsa
+    - echo -e "Host 10.2.3.211\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
+    - rsync -rav  -e 'ssh -p 36000' --delete docs/.vuepress/dist/  root@10.2.3.211:/www/wwwroot/docs/
+  tags: 
+    - rdep-common
+
+
+deploy_to_product:
   image: alpine
   stage: deploy
   before_script:
@@ -41,4 +57,4 @@ deploy:
   only:
     - master
   tags: 
-    - rdep-docs
+    - rdep-common

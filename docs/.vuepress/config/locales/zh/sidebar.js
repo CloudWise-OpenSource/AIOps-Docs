@@ -1,4 +1,27 @@
 module.exports = {
+  '/zh/gaia/': [
+    {
+      title: 'Generic AIOps Atlas',
+      collapsable: false,
+      children: [
+        '',
+        'overview',
+        'description',
+        'tasks'
+      ]
+    },
+  ],
+  
+  '/zh/hours/': [
+    {
+      title: 'Hours',
+      collapsable: false,
+      children: [
+        '',
+      ]
+    },
+  ],
+  
   '/zh/': [
     {
       title: '介绍',
@@ -36,26 +59,5 @@ module.exports = {
     }
   ],
 
-  '/zh/gaia/': [
-    {
-      title: 'Generic AIOps Atlas',
-      collapsable: false,
-      children: [
-        '',
-        'overview',
-        'description',
-        'tasks'
-      ]
-    },
-  ],
-  
-  '/en/hours/': [
-    {
-      title: 'Hours',
-      collapsable: false,
-      children: [
-        '',
-      ]
-    },
-  ],
+
 }

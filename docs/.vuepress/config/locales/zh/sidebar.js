@@ -23,6 +23,13 @@ module.exports = {
         'error_code', 
       ]
     },
+    {
+      title: 'Hours算法服务',
+      collapsable: false,
+      children: [
+        'auto_value',
+      ]
+    },
   ],
   
   '/zh/': [

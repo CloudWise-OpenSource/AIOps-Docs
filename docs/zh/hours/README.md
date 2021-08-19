@@ -4,6 +4,6 @@ Hours (Hôra)是一套基于云智慧AIOps核心能力的算法技术栈。其�
 
 原则：Talk is cheap, show me the code. AIOps的能力应该是看得见摸得着的，应该是可度量的，无法展现的能力其实是一种不自信的能力或是一种本不成熟但因隐藏的深而显得神秘的能力。所谓大道至简，AIOps也同样遵循着这样的原则，任何对AIOps算法能力的贡献均应该在Hours上得到体现，任何算法的提升都应该是Code level的，都应该是Runnable的，都应该是Measurable的。
 
-Hours架构图
+### Hours架构图
 
 ![Hours](/images/Lark20210820-005154.png)

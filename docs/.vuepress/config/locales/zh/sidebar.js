@@ -27,7 +27,15 @@ module.exports = {
       title: 'Hours算法服务',
       collapsable: false,
       children: [
-        'auto_value',
+        {
+          title: '指标异常检测类',
+          collapsable: true,
+          children: [
+            'auto_value',
+            'dod_wow',
+
+          ]
+        },
       ]
     },
   ],

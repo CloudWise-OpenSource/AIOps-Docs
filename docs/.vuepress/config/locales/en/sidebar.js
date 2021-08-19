@@ -28,41 +28,6 @@ module.exports = {
       collapsable: false,
       children: [
         '',
-        'code-of-conduct',
-        'releases',
-        'contributing',
-        'bugs',
-        'faq'
-      ]
-    },
-    {
-      title: 'Setting Up',
-      collapsable: false,
-      children: [
-        'composer',
-        'install',
-        'update',
-        'troubleshoot'
-      ]
-    },
-    {
-      title: 'Management',
-      collapsable: false,
-      children: [
-        'admin',
-        'config',
-        'extensions',
-        'languages',
-        'themes',
-        'mail',
-        'console'
-      ]
-    },
-    {
-      title: 'Advanced',
-      collapsable: false,
-      children: [
-        'extenders'
       ]
     }
   ]

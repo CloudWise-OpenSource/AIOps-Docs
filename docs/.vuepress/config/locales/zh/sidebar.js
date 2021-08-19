@@ -18,6 +18,9 @@ module.exports = {
       collapsable: false,
       children: [
         '',
+        'getting_started',
+        'faq',
+        'error_code', 
       ]
     },
   ],
@@ -28,7 +31,6 @@ module.exports = {
       collapsable: false,
       children: [
         '',
-        'introduction',
         'releases',
       ]
     },
@@ -36,6 +38,7 @@ module.exports = {
       title: '基本使用',
       collapsable: false,
       children: [
+        'getting_started',
         'file_manage',
         'develop_env',
         'service_manage',

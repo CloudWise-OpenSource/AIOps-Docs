@@ -12,12 +12,15 @@ http://106.75.53.174:4399/hours/#/Anomaly%20Detection%20Algorithm%20API/get_anom
 ```
 
 ### 参数
-> up：上边界
-> down：下边界
-> yhat：基线的幅度大小
-> anomaly：0正常点，1异常点
-> _up: True表示单边检测，anomaly中的异常点为大于上边界的点
-> _down：True表示单边检测，anomaly中的异常点为小于下边界的点
+
+```
+up：上边界
+down：下边界
+yhat：基线的幅度大小
+anomaly：0正常点，1异常点
+_up: True表示单边检测，anomaly中的异常点为大于上边界的点
+_down：True表示单边检测，anomaly中的异常点为小于下边界的点
+```
 
 ## demo演示
 

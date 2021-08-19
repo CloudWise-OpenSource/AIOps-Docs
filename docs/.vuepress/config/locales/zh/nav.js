@@ -2,12 +2,6 @@ module.exports = [
     { text: '摩尔平台', link: '/zh/' },
     { text: 'GAIA', link: '/zh/gaia/' },
     { text: 'Hours', link: '/zh/hours/' },
-    {
-      text: 'CloudWise',
-      items: [
-        { text: '首页', link: 'http://10.2.3.211/' },
-        { text: '官网', link: 'https://www.cloudwise.com/cn/' },
-        { text: '社区', link: 'http://10.2.3.211:8001/' },
-      ]
-    }
+    { text: 'AIOps首页', link: 'http://www.cloudwise.ai/' },
+    { text: 'AIOps社区', link: 'http://bbs.cloudwise.ai/' }
   ]

@@ -8,18 +8,27 @@
 ## API接口
 
 ```
-http://106.75.53.174:4399/hours/#/Anomaly%20Detection%20Algorithm%20API/get_anomaly_detection_api_auto_value
+http://106.75.53.174:4399/anomaly_detection_api/auto_value
 ```
 
 ### 参数
 
 ```
-up：上边界
-down：下边界
-yhat：基线的幅度大小
-anomaly：0正常点，1异常点
-_up: True表示单边检测，anomaly中的异常点为大于上边界的点
-_down：True表示单边检测，anomaly中的异常点为小于下边界的点
+            'data_id': specify one data for auto value algorithm
+            'show_result_as_image': True show result as image, False show result as json
+            'q_big':  parameters of sensitivity of anomaly detection
+            'q_small': the same value and meaning with q_big
+            'std_boundary': 0.5,  # boundary of standard deviation
+            'percent': 99.7,  # sensitivity of anomaly detection
+            'errors':-1,  # learning error parameters by hand or automatic
+            'bi_direction':True,  # bilateral anomaly detection
+            'drift_percent':1,  # length of drift behavior that can tolerate
+            'mode':'percentile',  # percentile normal or extreme
+            'per':50,  # width of boundary tolerance
+            'sigma':1,  # parameter for boundary tolerance
+            'detrend':False,  # weather delete trend data from input data
+            'windows_length':10,  # points number of window for de-trend
+            'check_param':True  # enable unconstrained mode
 ```
 
 ## demo演示
@@ -33,10 +42,7 @@ import matplotlib.pyplot as plt
 
 url_auto_value='http://106.75.53.174:4399/anomaly_detection_api/auto_value'
 params = {
-          #ibpialr_valuelist_from2019-11-16to2019-12-16_1
-          # ibpialr_valuelist_from2019-11-16to2019-12-16_1
             'data_id': 'ibpialr_valuelist_from2019-11-16to2019-12-16_1',  # specify one data for auto value algorithm
-            #true
             'show_result_as_image':  True,  # True show result as image, False show result as json
             'q_big': 1e-3,  # parameters of sensitivity of anomaly detection
             'q_small': 1e-3,  # the same value and meaning with q_big

@@ -14,21 +14,21 @@ http://106.75.53.174:4399/anomaly_detection_api/auto_value
 ### 参数
 
 ```
-            'data_id': specify one data for auto value algorithm
-            'show_result_as_image': True show result as image, False show result as json
-            'q_big':  parameters of sensitivity of anomaly detection
-            'q_small': the same value and meaning with q_big
-            'std_boundary': 0.5,  # boundary of standard deviation
-            'percent': 99.7,  # sensitivity of anomaly detection
-            'errors':-1,  # learning error parameters by hand or automatic
-            'bi_direction':True,  # bilateral anomaly detection
-            'drift_percent':1,  # length of drift behavior that can tolerate
-            'mode':'percentile',  # percentile normal or extreme
-            'per':50,  # width of boundary tolerance
-            'sigma':1,  # parameter for boundary tolerance
-            'detrend':False,  # weather delete trend data from input data
-            'windows_length':10,  # points number of window for de-trend
-            'check_param':True  # enable unconstrained mode
+'data_id': specify one data for auto value algorithm
+'show_result_as_image': True show result as image, False show result as json
+'q_big':  parameters of sensitivity of anomaly detection
+'q_small': the same value and meaning with q_big
+'std_boundary': boundary of standard deviation
+'percent': sensitivity of anomaly detection
+'errors':-1,learning error parameters by hand or automatic
+'bi_direction': bilateral anomaly detection
+'drift_percent':length of drift behavior that can tolerate
+'mode':percentile normal or extreme
+'per':width of boundary tolerance
+'sigma':parameter for boundary tolerance
+'detrend':weather delete trend data from input data
+'windows_length':points number of window for de-trend
+'check_param':enable unconstrained mode
 ```
 
 ## demo演示

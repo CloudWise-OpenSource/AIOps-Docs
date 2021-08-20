@@ -6,15 +6,11 @@
 ## API接口
 
 ```
-http://106.75.53.174:4399/hours/#/Anomaly%20Detection%20Algorithm%20API/get_anomaly_detection_api_dod_wow
+http://106.75.53.174:4399/anomaly_detection_api/dod_wow
 ```
 
-### 参数
-> sigma_up: 数据上边界对应的标准差值
-> sigma_down: 数据下边界对应的标准差值
-> half_win_d: 同比半窗长（点数)
-> half_win_w:环比半窗长（点数）
-> training_day:训练数据长度
+## 参数
+
 
 
 ## demo演示
@@ -46,5 +42,5 @@ with open('1.png','wb') as f:
 display(Image.open('1.png'))
 ```
 
-### 运行结果：
+##运行结果：
 ![](/images/dod_wow_demo.png)

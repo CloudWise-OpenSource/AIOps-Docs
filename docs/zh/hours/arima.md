@@ -1,9 +1,8 @@
 # arima 自回归差分滑动平均
 
 ## 应用场景及描述
-自动阈值算法主要应用于DOCP平台中的事件管理和指标体系工作台产品模块。
-1、在事件管理模块通过定期对历史指标数据的模型训练，自动计算出未来一段时间的指标上下阈值，在实时数据到达时，实时聚合出当前指标数值，与预测的上下阈值进行比较，超出阈值区间范围的判定为异常数据，根据具体配置的告警规则进行进一步判断或通知
-2、在指标体系工作台模块，针对选择自动阈值算法作为指标健康度计算的，同样定时选取历史数据进行模型训练，计算出未来一段时间的指标上下阈值和基准值。根据实际指标与基准值的偏离程度与上下阈值比较来评估指标健康度。
+ARIMA，即'自回归差分滑动平均'算法能够对非平稳时间序列的未来进行预测，本算法建立的预测模型包含了基于历史数据的自回归部分和基于历史预测误差的滑动平均部分
+
 
 ## API接口
 
@@ -14,21 +13,22 @@ http://106.75.53.174:4399/anomaly_detection_api/auto_value
 ## 参数
 
 ```
-'data_id': specify one data for auto value algorithm
-'show_result_as_image': True show result as image, False show result as json
-'q_big':  parameters of sensitivity of anomaly detection
-'q_small': the same value and meaning with q_big
-'std_boundary': boundary of standard deviation
-'percent': sensitivity of anomaly detection
-'errors':-1,learning error parameters by hand or automatic
-'bi_direction': bilateral anomaly detection
-'drift_percent':length of drift behavior that can tolerate
-'mode':percentile normal or extreme
-'per':width of boundary tolerance
-'sigma':parameter for boundary tolerance
-'detrend':weather delete trend data from input data
-'windows_length':points number of window for de-trend
-'check_param':enable unconstrained mode
+'show_result_as_image':True show result as image, False show result as json
+'data_id': specify one data for dynamic baseline algorithm
+'forecast_period': forecast length, only 'd'(days),'h'(hours),'m'(mins) are allowed
+'training_duration': training length, only 'd'(days),'h'(hours),'m'(mins) are allowed
+'train_grain':grain for forecast
+'has_trend':whether or not has trend component in historical data. 'add'/None
+'has_season':whether or not has season component in historical data. 'add'/None
+'season':estimated season duration from past dataset, 'D'(days),'H'(hours),'M'(mins) are allowed
+'regress':level smoothing coefficient, float, int, None (0~1)
+'diff':trend smoothing coefficient, float, int, None (0~1)
+'erroravg':season smoothing coefficient, float, int, None (0~1)
+'interval_width':conf_interval for confidence interval
+'sigma_num':sigma_num used to remove outliers. if sigma_num == -1, no outlier elimination
+'auto_param':fit is auto_select param best on fit, test is auto_select param best on test, no is don't auto_select
+'evaluate': mse, mean squared error, mas, mean absolute error
+'check_param': enable parameter checking
 ```
 
 ## demo演示
@@ -40,30 +40,31 @@ import pandas as pd
 from PIL import Image
 import matplotlib.pyplot as plt
 
-url_auto_value='http://106.75.53.174:4399/anomaly_detection_api/auto_value'
+url_arima='http://106.75.53.174:4399/forecasting_api/arima'
 params = {
-            'data_id': 'ibpialr_valuelist_from2019-11-16to2019-12-16_1',  # specify one data for auto value algorithm
-            'show_result_as_image':  True,  # True show result as image, False show result as json
-            'q_big': 1e-3,  # parameters of sensitivity of anomaly detection
-            'q_small': 1e-3,  # the same value and meaning with q_big
-            'std_boundary': 0.5,  # boundary of standard deviation
-            'percent': 99.7,  # sensitivity of anomaly detection
-            'errors':-1,  # learning error parameters by hand or automatic
-            'bi_direction':True,  # bilateral anomaly detection
-            'drift_percent':1,  # length of drift behavior that can tolerate
-            'mode':'percentile',  # percentile normal or extreme
-            'per':50,  # width of boundary tolerance
-            'sigma':1,  # parameter for boundary tolerance
-            'detrend':False,  # weather delete trend data from input data
-            'windows_length':10,  # points number of window for de-trend
-            'check_param':True  # enable unconstrained mode
+    'show_result_as_image':True,  # True show result as image, False show result as json
+    'data_id':'zjpnldr_value_from2020-11-10to2020-12-07_8433',  # specify one data for dynamic baseline algorithm
+    'forecast_period':'2D',  # forecast length, only 'd'(days),'h'(hours),'m'(mins) are allowed
+    'training_duration':'18D',  # training length, only 'd'(days),'h'(hours),'m'(mins) are allowed
+    'train_grain':'5min',  # grain for forecast
+    'has_trend':False,  # whether or not has trend component in historical data. 'add'/None
+    'has_season':True,  # whether or not has season component in historical data. 'add'/None
+    'season':'7D',  # estimated season duration from past dataset, 'D'(days),'H'(hours),'M'(mins) are allowed
+    'regress':3,  # level smoothing coefficient, float, int, None (0~1)
+    'diff':3,  # trend smoothing coefficient, float, int, None (0~1)
+    'erroravg':3,  # season smoothing coefficient, float, int, None (0~1)
+    'interval_width':0.95,  # conf_interval for confidence interval
+    'sigma_num':-1,  # sigma_num used to remove outliers. if sigma_num == -1, no outlier elimination
+    'auto_param':'test',  # fit is auto_select param best on fit, test is auto_select param best on test, no is don't auto_select
+    'evaluate':'mse',  # mse, mean squared error, mas, mean absolute error
+    'check_param':True  # enable parameter checking
 }
 
-r = requests.get(url_auto_value, params=params)  # now, data update success
+r = requests.get(url_arima, params=params)  # now, data update success
 with open('1.png','wb') as f:
     f.write(r.content)
 display(Image.open('1.png'))
 ```
 
 ## 运行结果
-![](/images/auto_value_demo.png)
+![](/images/arima_demo.png)

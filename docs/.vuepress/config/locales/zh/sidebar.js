@@ -38,15 +38,6 @@ module.exports = {
             'wave_detection'
           ]
         },
-        {
-          title: '指标预测类',
-          collapsable: true,
-          children: [
-            'arima',
-            'holtwinter',
-            'lr'
-          ]
-        }
       ]
     },
   ],

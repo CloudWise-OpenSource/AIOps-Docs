@@ -47,5 +47,5 @@ with open('1.png','wb') as f:
 display(Image.open('1.png'))
 ```
 
-##运行结果：
+## 运行结果：
 ![](/images/dod_wow_demo.png)

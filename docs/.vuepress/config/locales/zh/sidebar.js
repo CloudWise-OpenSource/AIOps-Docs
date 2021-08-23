@@ -33,7 +33,7 @@ module.exports = {
           children: [
             'auto_value',
             'dod_wow',
-
+            'fixed_values',
           ]
         },
       ]

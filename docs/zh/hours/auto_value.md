@@ -11,7 +11,7 @@
 http://106.75.53.174:4399/anomaly_detection_api/auto_value
 ```
 
-### 参数
+## 参数
 
 ```
 'data_id': specify one data for auto value algorithm
@@ -65,5 +65,5 @@ with open('1.png','wb') as f:
 display(Image.open('1.png'))
 ```
 
-### 运行结果：
+## 运行结果：
 ![](/images/auto_value_demo.png)

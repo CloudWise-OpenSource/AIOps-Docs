@@ -65,5 +65,5 @@ with open('1.png','wb') as f:
 display(Image.open('1.png'))
 ```
 
-## 运行结果：
+## 运行结果
 ![](/images/auto_value_demo.png)

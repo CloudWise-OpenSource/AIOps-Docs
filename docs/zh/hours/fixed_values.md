@@ -48,4 +48,4 @@ display(Image.open('1.png'))
 ```
 
 ## 运行结果
-![](/images/auto_value_demo.png)
+![](/images/fixed_values_demo.png)

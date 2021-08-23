@@ -34,6 +34,16 @@ module.exports = {
             'auto_value',
             'dod_wow',
             'fixed_values',
+            'sigma',
+            'wave_detection'
+          ]
+        },
+        {
+          title: '指标预测类',
+          collapsable: true,
+          children: [
+            'arima',
+            'holtwinter',
           ]
         },
       ]

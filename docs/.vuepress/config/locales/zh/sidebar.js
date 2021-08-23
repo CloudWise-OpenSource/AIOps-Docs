@@ -44,8 +44,9 @@ module.exports = {
           children: [
             'arima',
             'holtwinter',
+            'lr'
           ]
-        },
+        }
       ]
     },
   ],

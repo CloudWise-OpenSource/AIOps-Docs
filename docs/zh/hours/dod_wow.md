@@ -11,6 +11,7 @@ http://106.75.53.174:4399/anomaly_detection_api/dod_wow
 ```
 
 ## 参数
+```
 'data_id':specify one data for dod_wow algorithm
 'show_result_as_image':True show result as image, False show result as json
 'sigma_up': standard deviation number of up boundary
@@ -19,6 +20,7 @@ http://106.75.53.174:4399/anomaly_detection_api/dod_wow
 'half_win_w':half window length of week on week
 'training_day': number of training day
 'check_param':enable unconstrained mode
+```
 
 ## demo演示
 

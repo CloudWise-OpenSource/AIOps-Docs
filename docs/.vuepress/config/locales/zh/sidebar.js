@@ -6,7 +6,7 @@ module.exports = {
       children: [
         '',
         'overview',
-        'description',
+        'dataset-description',
         'tasks'
       ]
     },

@@ -2,24 +2,24 @@
 
 ## Task 1: metric anomaly detection
 
-### task background**
+### task background
 
 When the IT system fails, the operators must ensure that the deployed services and intermediate software have sufficient computing and network resources, and solve all the emergency situations that deteriorate the system performance. Quickly find the root cause of IT system failure or problem. At this time, many monitoring indicators will show an abnormal state. As a means to automatically find out whether the monitoring indicators of the system are in an abnormal state through the algorithm, if used properly, the system will be informed of the failure in time, providing valuable clues for further root cause analysis.
 
 Therefore, anomaly detection for metric is very important in aiops. It can give an alarm in time to determine whether the system has a fault. It provides valuable information and time for subsequent root cause analysis.
 
-### task description**
+### task description
 
 For a given metric with abnormal behavior, we give labels for each point of time series (0 for normal, and 1 for anomaly). Participants need to accurately judge the normal data points and abnormal data points in the time series data through the algorithm. In our dataset, there are different kinds of data types, such as periodic data, stationary data, data with change points and so on. Participants need to accurately identify the outliers under the above different data types.
 
-### data description**
+### data description
 |     File name      | Relevant repository |
 | ------------------ | ------------------- |
 | **Companion Data** | metrc_detection     |
 | **MicroSS**        | metric              |
 
 
-### evaluation metrics**
+### evaluation metrics
 
 Time series anomaly detection here is a classification problem, and its evaluation metric is the same as that of traditional machine learning. We usually use the notion "accrancy", "precision", "recall" and "F1-score" to evaluate the result.
 
@@ -33,21 +33,14 @@ F1-Score is a combination of Precision and Recall.
 
 We let TP stand for True positive, TN for True negative, FP for False positive and FN for False negative,where:
 
-$$
-Accrancy = \frac{TP+TN}{TP+TN+FP+FN}
-$$
+$Accrancy = \frac{TP+TN}{TP+TN+FP+FN}$
 
-$$
-Precision = \frac{TP}{TP+FP}
-$$
+$Precision = \frac{TP}{TP+FP}$
 
-$$
-Recall = \frac{TP}{TP+TN}
-$$
+$Recall = \frac{TP}{TP+TN}$
 
-$$
-F1Score = \frac{2PR}{P+R}
-$$
+$F1Score = \frac{2PR}{P+R}$
+
 where P is Precison and R is Recall.
 
 
@@ -77,13 +70,13 @@ Before collecting target metrics for forecasting, participants are required to e
 
 In metric forecasting, the performance of the selected algorithem can only be apropriately assessed once the data for the forecast period have become available. There are two evaluation methods are employed in evaluating the accuracy of forecasting results.
 
-First we define the forecasting error as:$e_{T+h} = Y_{T+h} - \hat Y_{T+h}$
+First we define the forecasting error as: $e_{T+h} = Y_{T+h} - \hat Y_{T+h}$
 
 
 
 Then the two evaluation metrics applied are:
 
-MAE =$\frac{1}{h}\Sigma_{i=1}^{h}|e_{T+i}|$
+MAE = $\frac{1}{h}\Sigma_{i=1}^{h}|e_{T+i}|$
 
 MSE = $\frac{1}{h}\Sigma_{i=1}^{h}e_{T+i}^{2}$
 
@@ -113,35 +106,22 @@ Log semantics anomaly detection here includes 2 phases: binary classification an
 
 In binary classification, we usually use the notion "accuracy", "precision", "recall" and "F1-score" to evaluate the result. In multi classification, we usually use the notion "macro-accuracy", "macro-precision", "macro-recall", "macro-f1" evaluate the result. where:
 
-$$
-Accrancy = \frac{TP+TN}{TP+TN+FP+FN}
-$$
+$Accrancy = \frac{TP+TN}{TP+TN+FP+FN}$
 
-$$
-Precision = \frac{TP}{TP+FP}
-$$
+$Precision = \frac{TP}{TP+FP}$
 
-$$
-Recall = \frac{TP}{TP+TN}
-$$
+$Recall = \frac{TP}{TP+TN}$
 
 $F1Score = \frac{2PR}{P+R}$ where P is Precision and R is Recall.
 
-$$
-Macro-accuracy =  \frac{1}{n}\sum_{i=1}^nA_{i}
-$$
+$Macro-accuracy =  \frac{1}{n}\sum_{i=1}^nA_{i}$
 
-$$
-Macro-precision =  \frac{1}{n}\sum_{i=1}^nP_{i}
-$$
+$Macro-precision =  \frac{1}{n}\sum_{i=1}^nP_{i}$
 
-$$
-Macro-recall =  \frac{1}{n}\sum_{i=1}^nR_{i}
-$$
+$Macro-recall =  \frac{1}{n}\sum_{i=1}^nR_{i}$
 
-$$
-Macro-f1 =  \frac{1}{n}\sum_{i=1}^nF1_{i}
-$$
+$Macro-f1 =  \frac{1}{n}\sum_{i=1}^nF1_{i}$
+
 Accrancy is proportion of correctly predicted samples in the total samples;
 
 Precision/Macro-precision is correct proportion of positive samples predicted by the classifier;
@@ -181,7 +161,7 @@ The log is semi-structured text data,it is a composition of constant strings and
 
 In log parsing, we mainly evaluate whether the log is accurately classified, so there are two ways to evaluate the accuracy of log pattern parsing. One is PA (Parse Accrancy) and the other is F measure.
 
-$PA=\frac{1}{N}\sum_{j=1}^J\sum_{k=1}^K f(\omega_k,c_j)$,  $f(\omega_k,c_j)=\left\{\begin{array}{lr}|c_j| & if \ \  \omega_k \cap c_j=c_j \ \ and  \ \ |\omega_k|=|c_j| \\ 0  &otherwise\\ \end{array}\right.$ .
+$PA=\frac{1}{N}\sum_{j=1}^J\sum_{k=1}^K f(\omega_k,c_j)$ ,  where $f(\omega_k,c_j)= |c_j|$ if $\omega_k \cap c_j=c_j$ and $|\omega_k|=|c_j|$, otherwise $f(\omega_k,c_j)= 0$ .
 
 $N$ is total number of samples，$\Omega =\{\omega_1,\omega_2,\cdots,\omega_K\}$ is the set of clusters and $\mathbb{C}=\{c_1,c_2,\cdots,c_J\}$ is the set of classes. $\omega_k$ represents the  $k_{th}$ cluster in the set $\Omega$ , $c_j$ represents the $j_{th}$ class in the set $\mathbb{C}$.
 

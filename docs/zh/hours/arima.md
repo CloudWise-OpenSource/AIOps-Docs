@@ -7,7 +7,7 @@ ARIMA，即'自回归差分滑动平均'算法能够对非平稳时间序列的�
 ## API接口
 
 ```
-http://106.75.53.174:4399/anomaly_detection_api/auto_value
+http://106.75.53.174:4399/anomaly_detection_api/arima
 ```
 
 ## 参数

@@ -234,18 +234,10 @@ Here we select a login scenario from **MicroSS** for the root cause analysis tas
 
 In MeRCA we use the score $TOP_{K} ^{Alg}$ , where $K$ is 1, 3 or 5, to evaluate the performance of algorithm $Alg$ . We denote $Inc$ as the set of incidents in MeRCA. For each incident $a \in Inc$ and algorithm $Alg$ , the output order for metric $m$ is $O_{a}^{Alg}(m)$ . We also denote $rc_{a}$ as the real root cause for incident $a \in Inc$ . Then we define the evaluation score $TOP_{K}^{Alg} = \frac{1}{|A|}\sum_{a \in A} \frac{1}{O_{a}^{Alg}(rc_{a})}$, where $K$ is 1, 3 or 5 .
 
-**—Citation**
-
+## Citation
 To cite this dataset in your publication, please use
-
 @article{zhang2021cblue,
-
-title={CBLUE: A Chinese Biomedical Language Understanding Evaluation Benchmark},
-
-author={Mosha Chen and Chuanqi Tan and Zhen Bi and Xiaozhuan Liang and Lei Li and Ningyu Zhang and Xin Xie and Xin Shang and Kangping Yin and Jian Xu and Fei Huang and Luo Si and Yuan Ni and Guotong Xie and Zhifang Sui and Baobao Chang and Hui Zong and Zheng Yuan and Linfeng Li and Jun Yan and Hongying Zan and Kunli Zhang and Buzhou Tang and Qingcai Chen},
-
-journal={arXiv preprint arXiv:2106.08087},
-
+title={GAIA: Generic AIOps Atlas},
+author={Peng Bai, Meilun Li, Bo Zhang, Chuan Yan, Tieqiao Zheng, Xiaosong Huang, Hao Zhang, Tongtong Fang, and Xulong Yong},
 year={2021}
-
 }

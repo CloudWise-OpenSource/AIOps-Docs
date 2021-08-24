@@ -70,4 +70,4 @@ display(Image.open('1.png'))
 ```
 
 ## 运行结果
-![](/images/holtwinter.png)
+![](/images/holtwinter_demo.png)

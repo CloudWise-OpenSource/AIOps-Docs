@@ -31,7 +31,7 @@ import pandas as pd
 from PIL import Image
 import matplotlib.pyplot as plt
 
-url_lr_value='http://106.75.53.174:4399/forecasting_api/lr'
+url_lr='http://106.75.53.174:4399/forecasting_api/lr'
 params = {
     'show_result_as_image':True,  # True show result as image, False show result as json
     'data_id':'ibpialr_valuelist_from2019-11-16to2019-12-16_1',  # specify one data for dynamic baseline algorithm

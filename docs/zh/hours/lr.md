@@ -41,7 +41,7 @@ params = {
     'check_para':True  # weather check parameters
 }
 
-r = requests.get(url_lr_value, params=params)  # now, data update success
+r = requests.get(url_lr, params=params)  # now, data update success
 with open('1.png','wb') as f:
     f.write(r.content)
 display(Image.open('1.png'))

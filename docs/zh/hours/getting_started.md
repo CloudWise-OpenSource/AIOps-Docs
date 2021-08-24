@@ -17,17 +17,9 @@
 ### 2、算法服务调用示例
 
 我们在其中执行调用hours服务接口，相关hours接口详情文档见 http://10.2.3.211:8002/zh/hours
+![](/images/hours_test_demo.png)
 
-```python
-import requests
-url_auto_value='http://106.75.53.174:4399/anomaly_detection_api/auto_value'
-params = {
-    'data_id':'hppivkerl_TRADE_NUM_from2020-07-06to2020-09-05_11206',
-    'show_result_as_image':False
-}
-r = requests.get(url_auto_value, params=params) # now, data update success
-r.text
-```
+将Hours算法服务中的相应算法的demo演示代码输入到jupyter notebook,运行代码，即可得到结果。当然，你可一尝试改变params参数。
 
 
 

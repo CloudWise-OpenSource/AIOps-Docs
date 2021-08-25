@@ -34,11 +34,9 @@ http://106.75.53.174:4399/anomaly_detection_api/arima
 ## demo演示
 
 ```python
-import json
 import requests
 import pandas as pd
 from PIL import Image
-import matplotlib.pyplot as plt
 
 url_arima='http://106.75.53.174:4399/forecasting_api/arima'
 params = {

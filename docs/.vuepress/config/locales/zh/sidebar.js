@@ -46,7 +46,14 @@ module.exports = {
             'holtwinter',
             'lr',
           ]
-        }
+        },
+         {
+          title: '上传csv文件',
+          collapsable: true,
+          children: [
+            'upload_csv_file'
+          ]
+        },
       ]
     },
   ],

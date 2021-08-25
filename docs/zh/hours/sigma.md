@@ -22,11 +22,9 @@ http://106.75.53.174:4399/anomaly_detection_api/sigma
 ## demo演示
 
 ```python
-import json
 import requests
 import pandas as pd
 from PIL import Image
-import matplotlib.pyplot as plt
 
 url_sigma='http://106.75.53.174:4399/anomaly_detection_api/sigma'
 params = {

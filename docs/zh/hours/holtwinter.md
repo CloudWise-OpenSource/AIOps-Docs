@@ -35,11 +35,9 @@ http://106.75.53.174:4399/forecasting_api/holtwinter
 ## demo演示
 
 ```python
-import json
 import requests
 import pandas as pd
 from PIL import Image
-import matplotlib.pyplot as plt
 
 url_holtwinter='http://106.75.53.174:4399/forecasting_api/holtwinter'
 params = {

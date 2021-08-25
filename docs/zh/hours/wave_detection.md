@@ -33,11 +33,9 @@ http://106.75.53.174:4399/anomaly_detection_api/wave_detection
 ## demo演示
 
 ```python
-import json
 import requests
 import pandas as pd
 from PIL import Image
-import matplotlib.pyplot as plt
 
 url_wave_detection='http://106.75.53.174:4399/anomaly_detection_api/wave_detection'
 params  = {

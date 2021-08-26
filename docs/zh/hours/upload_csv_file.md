@@ -10,7 +10,7 @@ http://106.75.53.174:4399/data_layer_api/upload_file
 ```
 import requests
 
-cover_path = r'/Users/zhuhonghui/Desktop/zookeeper_middleware_zookeeper_server_sent.csv'  # 此处cover_path为上传csv文件的绝对路径
+cover_path = r'/Users/zhuhonghui/Desktop/zookeeper_middleware_zookeeper_server_sent.csv'  # 此处cover_path为上传csv文件的绝对路径,需要根据您的文件路径进行更改。
 csv_file = 'zookeeper_middleware_zookeeper_server_sent.csv'  # 此处为csv文件的名字
 url = 'http://106.75.53.174:4399/data_layer_api/upload_file'
 files = {

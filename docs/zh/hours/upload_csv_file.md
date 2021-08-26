@@ -5,7 +5,7 @@ http://106.75.53.174:4399/data_layer_api/upload_file
 ```
 csv文件格式要求:
 时间为13位时间戳格式
-![](/images/csv_format.png)
+![](/images/csv_demo.png)
 
 ## demo演示
 ```

@@ -19,7 +19,6 @@ module.exports = {
       children: [
         '',
         'getting_started',
-        'faq',
         'error_code', 
       ]
     },

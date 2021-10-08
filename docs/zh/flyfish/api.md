@@ -5,7 +5,7 @@ pageClass: block-page
 
 <iframe class="block-page-iframe"
   title="Example2"
-  width="100%"
+  width="97%"
   frameborder="0"
   marginheight="0"
   marginwidth="0"

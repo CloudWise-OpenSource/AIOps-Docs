@@ -53,14 +53,18 @@ pre.vue-container
 p a code
   color: $accentColor !important;
 
-.block-page .content__default
-  padding: 0!important;
-  width: 100%;
-  max-width: 100%;
+.block-page
+  .content__default
+    padding: 0!important;
+    width: 100%;
+    max-width: 100%;
+  .page-edit
+    display: none;
 
 .block-page-iframe
   border: none;
-  height: calc(100vh - 5.6rem - 100px);
+  height: calc(100vh - 3.6rem);
+
 
 .fly-fish-case
   display: flex;

@@ -1,6 +1,5 @@
 ---
 title: 开放API
-prev: ./deploy
 pageClass: block-page
 ---
 

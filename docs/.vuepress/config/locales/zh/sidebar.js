@@ -187,12 +187,12 @@ module.exports = {
           collapsable: false,
           children: ['/']
         },
-        {
-          title: '开放API',
-          path: '/zh/flyfish/api',
-          collapsable: false,
-          children: ['/']
-        }
+        // {
+        //   title: '开放API',
+        //   path: '/zh/flyfish/api',
+        //   collapsable: false,
+        //   children: ['/']
+        // }
       ]
     },
   ],

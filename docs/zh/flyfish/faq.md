@@ -1,6 +1,6 @@
 ---
 title: 常见问题解答
-prev: ./component
+prev: ./component/basic
 next: ./changelog
 ---
 

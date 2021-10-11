@@ -1,7 +1,7 @@
 ---
 title: 使用案例
 prev: ./getting-started/create-project
-next: ./advanced
+next: ./advanced/component
 tags:
   - case
   - 案例

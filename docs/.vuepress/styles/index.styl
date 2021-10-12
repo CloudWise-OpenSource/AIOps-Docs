@@ -11,13 +11,13 @@ body
     &:focus
       background-color: #fff;
       border-color: $accentColor
-    
+
     &::placeholder
       opacity 1
 
   .nav-links a, a.sidebar-link, .dropdown-title, .sidebar-heading
     color #667d99
-  
+
   a.sidebar-link.active
     color $accentColor
 
@@ -52,3 +52,26 @@ pre.vue-container
 
 p a code
   color: $accentColor !important;
+
+.block-page
+  .content__default
+    padding: 0!important;
+    width: 100%;
+    max-width: 100%;
+  .page-edit
+    display: none;
+
+.block-page-iframe
+  border: none;
+  height: calc(100vh - 3.6rem);
+
+
+.fly-fish-case
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  > img
+    width: 48%;
+    height: auto;
+    cursor: pointer;

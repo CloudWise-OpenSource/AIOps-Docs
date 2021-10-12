@@ -22,6 +22,13 @@ module.exports = {
     },
   ],
 
+  '/en/flyfish/': [
+    {
+      title: 'FlyFish',
+      collapsable: false
+    },
+  ],
+
   '/en/': [
     {
       title: 'Introduction',

@@ -1,6 +1,6 @@
 ---
 title: 使用案例
-prev: ./getting-started/create-project
+prev: ./getting-started/
 next: ./advanced/component
 tags:
   - case

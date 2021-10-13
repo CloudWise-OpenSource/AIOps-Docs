@@ -1,7 +1,7 @@
 ---
 title: 架构及目录
 prev: false
-next: ./getting-started/create-project
+next: ./getting-started/
 ---
 
 ## 整体架构图

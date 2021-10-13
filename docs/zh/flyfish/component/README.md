@@ -1,7 +1,7 @@
 ---
 title: 进阶
 prev: ../advanced/component
-next: ../getting-started/create-project
+next: ../getting-started/
 ---
 
 组件主要包含七个部分:

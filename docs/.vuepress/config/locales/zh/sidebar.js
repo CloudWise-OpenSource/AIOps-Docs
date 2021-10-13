@@ -63,6 +63,11 @@ module.exports = {
       collapsable: false,
       children: [
         {
+          title: '架构及目录',
+          path: '/zh/flyfish/design',
+          collapsable: false,
+        },
+        {
           title: '快速上手',
           path: '/zh/flyfish/getting-started',
           collapsable: false,

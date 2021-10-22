@@ -1,7 +1,7 @@
 ---
 title: 内网部署
 prev: ./deploy
-next: ./api
+next: false
 ---
 
 ## 安装

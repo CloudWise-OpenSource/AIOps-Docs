@@ -12,7 +12,7 @@ next: ./create-project
 
 ```bash
 $ username: admin@yunzhihui.com
-$ password: yunzhihui!@#\$%
+$ password: yunzhihui!@#$%
 ```
 
 ![login](https://i.loli.net/2021/10/04/M79GPrOLwpseFIT.png)

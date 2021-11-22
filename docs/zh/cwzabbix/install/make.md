@@ -10,4 +10,4 @@ shell> make install
 ./configure --enable-agent
 ```
 
-- 当需要使用不在默认位置的库时，在MySQL配置文件–with-mysql = / <path_to_the_file> / mysql_config中添加可选路径，以选择所需的MySQL客户端库。 当在同一系统上安装了多个版本的MySQL或与MySQL一起安装了MariaDB时，此功能很有用。
+- 当需要使用不在默认位置的库时，在 MySQL 配置文件–with-mysql = / <path_to_the_file> / mysql_config 中添加可选路径，以选择所需的 MySQL 客户端库。 当在同一系统上安装了多个版本的 MySQL 或与 MySQL 一起安装了 MariaDB 时，此功能很有用。

@@ -1,15 +1,15 @@
-#### 创建Zabbix数据库
+#### 创建 Zabbix 数据库
 
 ##### Mysql
 
 ```shell
-# 创建zabbix用户和数据库
+# 创建 zabbix 用户和数据库
 shell> mysql -uroot -p<password>
 mysql> create database zabbix character set utf8 collate utf8_bin;
 mysql> create user 'zabbix'@'localhost' identified by '<password>';
 mysql> grant all privileges on zabbix.* to 'zabbix'@'localhost';
 mysql> quit;
-# 需要先编译Zabbix服务后，才会生成schema.sql等文件，初始化Zbbix数据库
+# 需要先编译 Zabbix 服务后，才会生成 schema.sql 等文件，初始化 Zabbix数据库
 shell> cd database/mysql
 shell> mysql -uzabbix -p<password> zabbix < schema.sql
 # stop here if you are creating database for Zabbix proxy
@@ -37,7 +37,7 @@ CREATE TABLE zabbix.history_buffer (day Date,
  value_dbl Float64, 
  value_str String ) ENGINE = Buffer(zabbix, history, 8, 30, 60, 9000, 60000, 256000, 256000000) ;
 
-# 如果需要在Clickhouse中创建trends与trends_unit视图，请执行以下语句
+# 如果需要在 Clickhouse 中创建 trends 与 trends_unit 视图，请执行以下语句
 CREATE MATERIALIZED VIEW zabbix.trends
 ENGINE = AggregatingMergeTree() PARTITION BY toYYYYMM(clock) ORDER BY (clock, itemid)
 AS SELECT

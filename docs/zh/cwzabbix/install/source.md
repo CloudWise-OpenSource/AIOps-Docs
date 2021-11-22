@@ -1,5 +1,5 @@
 ### 从源码包安装
-Zabbix编译安装参考：**此版本支持数据源为mysql+clickhouse**，编译时请注意参数！官方文档供参考：[Zabbix源代码安装](https://www.zabbix.com/documentation/5.0/zh/manual/installation/install)
+Zabbix 编译安装参考：**此版本支持数据源为 mysql + clickhouse**，编译时请注意参数！官方文档供参考：[Zabbix源代码安装](https://www.zabbix.com/documentation/5.0/zh/manual/installation/install)
 
 #### 下载源码包
 

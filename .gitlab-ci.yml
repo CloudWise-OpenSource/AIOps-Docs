@@ -2,7 +2,6 @@ stages:
   - build
   - deploy
 
-
 build:
   image: node:10
   stage: build
@@ -15,21 +14,18 @@ build:
   cache:
     paths:
       - node_modules/ # Node modules and dependencies
-  tags:
-    - rdep-common
   artifacts:
     name: "artifacts_$CI_COMMIT_REF_NAME_$CI_COMMIT_SHORT_SHA"
     expire_in: 3 day
     paths:
       - docs/.vuepress/dist
 
-    
 deploy_to_test:
   image: alpine
   stage: deploy
   before_script:
     - sed -i 's/dl-cdn.alpinelinux.org/mirrors.tuna.tsinghua.edu.cn/g' /etc/apk/repositories
-  script: 
+  script:
     - echo "==== docs deploy ===="
     - apk add --no-cache rsync openssh
     - mkdir -p ~/.ssh
@@ -37,16 +33,13 @@ deploy_to_test:
     - chmod 600 ~/.ssh/id_dsa
     - echo -e "Host 10.2.3.211\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
     - rsync -rav  -e 'ssh -p 36000' --exclude ".user.ini" --delete docs/.vuepress/dist/  root@10.2.3.211:/www/wwwroot/docs/
-  tags: 
-    - rdep-common
-
 
 deploy_to_product:
   image: alpine
   stage: deploy
   before_script:
     - sed -i 's/dl-cdn.alpinelinux.org/mirrors.tuna.tsinghua.edu.cn/g' /etc/apk/repositories
-  script: 
+  script:
     - echo "==== docs deploy ===="
     - apk add --no-cache rsync openssh
     - mkdir -p ~/.ssh
@@ -56,5 +49,3 @@ deploy_to_product:
     - rsync -rav  -e 'ssh -p 36000' --delete docs/.vuepress/dist/  $DEPLOY_USER@$DEPLOY_HOST:/data/app/docs/
   only:
     - master
-  tags: 
-    - rdep-common

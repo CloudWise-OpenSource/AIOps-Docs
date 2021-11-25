@@ -120,7 +120,6 @@ module.exports = {
       title: 'CW-Zabbix',
       collapsable: false,
       children: [
-        '',
         'start',
         {
           title: '安装要求',
@@ -140,6 +139,12 @@ module.exports = {
             'install/web',
             'install/config',
             'install/run',
+          ]
+        },
+        {
+          title: '性能测试报告',
+          children: [
+            "stresstest/"
           ]
         },
         {

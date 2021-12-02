@@ -73,7 +73,7 @@ module.exports = {
           collapsable: false,
           sidebarDepth: 1,
           children: ['getting-started/', 'getting-started/create-project'],
-        }, 
+        },
         {
           title: '案例',
           path: '/zh/flyfish/case',
@@ -115,6 +115,49 @@ module.exports = {
     }
   ],
 
+  '/zh/cwzabbix/': [
+    {
+      title: 'CW-Zabbix',
+      collapsable: false,
+      children: [
+        'start',
+        {
+          title: '安装要求',
+          collapsable: false,
+          children: [
+            'require/hard',
+            'require/soft',
+          ]
+        },
+        {
+          title: '编译安装',
+          collapsable: false,
+          children: [
+            'install/source',
+            'install/database',
+            'install/make',
+            'install/web',
+            'install/config',
+            'install/run',
+          ]
+        },
+        {
+          title: '性能测试报告',
+          children: [
+            "stresstest/"
+          ]
+        },
+        {
+          title: '更新日志',
+          collapsable: false,
+          children: [
+            'changelog'
+          ]
+        },
+      ]
+    },
+  ],
+
   '/zh/': [
     {
       title: '介绍',
@@ -136,6 +179,5 @@ module.exports = {
       ]
     }
   ],
-
 
 }

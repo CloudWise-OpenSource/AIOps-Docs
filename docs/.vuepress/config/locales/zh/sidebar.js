@@ -106,6 +106,12 @@ module.exports = {
           path: '/zh/flyfish/deploy',
           collapsable: false,
         },
+        {
+          title: '视频教程',
+          path: '/zh/flyfish/video-course/P1',
+          collapsable: false,
+          children: ['video-course/P1', 'video-course/P2', 'video-course/P3', 'video-course/P4']
+        },
         // {
         //   title: '开放API',
         //   path: '/zh/flyfish/api',

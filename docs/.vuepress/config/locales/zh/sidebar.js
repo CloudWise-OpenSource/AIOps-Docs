@@ -110,7 +110,10 @@ module.exports = {
           title: '视频教程',
           path: '/zh/flyfish/video-course/P1',
           collapsable: false,
-          children: ['video-course/P1', 'video-course/P2', 'video-course/P3', 'video-course/P4']
+          children: [
+            'video-course/P1', 'video-course/P2', 'video-course/P3', 'video-course/P4',
+            'video-course/P5', 'video-course/P6', 'video-course/P7',
+          ]
         },
         // {
         //   title: '开放API',

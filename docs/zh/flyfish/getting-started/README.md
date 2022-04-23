@@ -11,8 +11,8 @@ next: ./create-project
 想要使用`FlyFish`, 首先我们将提供给您一个默认登录账号:
 
 ```bash
-$ username: admin@yunzhihui.com
-$ password: yunzhihui!@#$%
+$ username: admin
+$ password: utq#SpV!
 ```
 
 ![login](https://i.loli.net/2021/10/04/M79GPrOLwpseFIT.png)
@@ -23,37 +23,37 @@ $ password: yunzhihui!@#$%
 
 ### 首页
 
-登录后进入首页, 首页展示了平台切换锚点、 组件、 可视化编辑、 用户 等模块页签及一键退出按钮。
+登录后进入首页, 首页展示了应用创建、用户管理等模块页签及一键退出按钮。
 
-1. 首页头部从左到右依次为: [平台切换锚点](#平台)、 [数据可视化 <Badge text="核心"/>](#数据可视化)、 [可视化组件 <Badge text="核心"/>](#可视化组件)、 [用户管理<Badge text="admin" type="warning"/>](#用户管理)、 [系统管理<Badge text="admin"  type="warning"/>](#系统管理)、 退出按钮.
-2. 左侧主要为当前功能面板子菜单选项
-3. 主要内容区域展示的为当前功能面板下的主要做操区域
+1. 首页左侧菜单分为应用管理与用户管理两大模块，应用管理包括: [项目管理](#项目管理)、 [应用开发 <Badge text="核心"/>](#应用开发)、 [组件开发 <Badge text="核心"/>](#组件开发)，用户管理包括: [用户列表 <Badge text="admin" type="warning"/>](#用户列表)、 [角色列表 <Badge text="admin"  type="warning"/>](#角色列表).
+2. 主要内容区域展示的为当前功能面板下的主要操做区域
+3. 右上角展示用户名称，单击一键退出
+
 
 ![index summary](/images/flyfish/getting-started/index-summary.png)
 
-### 平台
+### 项目管理
 
-整个系统由数据处理平台、组件开发平台、数据处理平台三部分组成.
+对平台项目的大屏应用、可视化组件等进行组织管理.
+
+1. 平台项目管理，包括新增项目、查询、删除、编辑项目信息
+2. 项目应用列表，可对当前项目内的大屏应用进行预览、开发、删除、导出、复制以及新增应用
+3. 项目组件列表，可对当前项目定制化开发的可视化组件进行管理
 
 ![platform](/images/flyfish/getting-started/platform.png)
 
-- 数据应用平台: 主要负责项目开发
-- 组件开发平台: 主要提供在线开发、编译、打包、导出以及分组等组件零件化功能
-- 数据处理平台: 主要提供项目的数据模型提供、以及三方数据处理中转功能
-
-### 数据可视化 <Badge text="核心"/>
+### 应用开发 <Badge text="核心"/>
 
 主要进行大屏(项目)创建、 开发、 以及导出部署等.
 
-1. 可进行已删除项目管理(包含还原操作)
-2. 针对条件快速筛选当前项目
-3. 单个项目概览信息
-4. 项目相关信息: 包含名称、开发人等
-5. 项目操作栏: 包含增删改查编辑预览等
+1. 可进行已删除应用管理(包含还原操作)
+2. 针对条件快速筛选当前应用
+3. 单个应用概览信息
+4. 应用操作栏: 包含增删改查编辑预览等
 
 ![data-create](/images/flyfish/getting-started/data-create.png)
 
-### 可视化组件 <Badge text="核心"/>
+### 组件开发 <Badge text="核心"/>
 
 主要进行可视化组件的创建、上传、更新以及删除等.
 
@@ -65,7 +65,7 @@ $ password: yunzhihui!@#$%
 
 ![data-visual](/images/flyfish/getting-started/data-visual.png)
 
-### 用户管理<Badge text="admin" type="warning"/>
+### 用户列表<Badge text="admin" type="warning"/>
 
 主要对当前系统进行用户的创建删除以及权限分配等.
 
@@ -77,14 +77,13 @@ $ password: yunzhihui!@#$%
 
 ![user-manage](/images/flyfish/getting-started/user-manage.png)
 
-### 系统管理<Badge text="admin"  type="warning"/>
+### 角色列表<Badge text="admin"  type="warning"/>
 
-主要对当前系统进行配置等.
+主要对当前系统角色权限进行配置等.
 
 1. 当前功能筛选
 2. 添加等操作
-3. 相关系统管理子菜单
-4. 当前筛选项信息
-5. 当前筛选项操作
+3. 编辑角色成员列表
+4. 配置角色权限
 
 ![sys-manage](/images/flyfish/getting-started/sys-manage.png)

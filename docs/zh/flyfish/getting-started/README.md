@@ -29,7 +29,6 @@ $ password: utq#SpV!
 2. 主要内容区域展示的为当前功能面板下的主要操做区域
 3. 右上角展示用户名称，单击一键退出
 
-
 ![index summary](/images/flyfish/getting-started/index-summary.png)
 
 ### 项目管理

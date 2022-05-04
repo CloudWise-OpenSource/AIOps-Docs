@@ -1,7 +1,7 @@
 ---
-title: 内网部署
-prev: ./deploy
-next: false
+title: 2.0版本
+prev: false
+next: ./deploy2_1
 ---
 
 ## 安装

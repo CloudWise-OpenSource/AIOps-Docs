@@ -1,7 +1,7 @@
 ---
 title: 版本记录
 prev: ./faq
-next: ./deploy
+next: false
 ---
 
 ## CHANGELOG

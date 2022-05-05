@@ -7,5 +7,6 @@ docs/.vuepress/dist
 *.log
 target/*
 !target/.gitkeep
+package-lock.json
 
 yarn.lock

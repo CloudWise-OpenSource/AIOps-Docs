@@ -8,7 +8,7 @@ next: ./create
 
 ## 在线开发
 
-直接在[组件开发平台](http://10.2.2.236:8363/pw/visual/component/list)进行组件开发。该平台提供了在线 ide 和实时预览大屏。
+直接在[组件开发平台](http://10.0.16.230:8089/#/app/component-develop)进行组件开发。该平台提供了在线 ide 和实时预览大屏。
 
 ## 本地开发
 

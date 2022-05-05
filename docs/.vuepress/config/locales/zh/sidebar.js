@@ -103,8 +103,19 @@ module.exports = {
         },
         {
           title: '内网部署',
-          path: '/zh/flyfish/deploy',
           collapsable: false,
+          children: [
+            {
+              title: '2.0版本',
+              path: '/zh/flyfish/deploy/deploy2_0',
+              collapsable: false
+            },
+            {
+              title: '2.1版本',
+              path: '/zh/flyfish/deploy/deploy2_1',
+              collapsable: false
+            }
+          ]
         },
         {
           title: '视频教程',

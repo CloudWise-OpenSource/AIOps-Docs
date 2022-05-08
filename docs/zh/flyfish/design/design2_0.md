@@ -1,39 +1,58 @@
 ---
-title: 架构及目录
+title: 2.0版本
 prev: false
-next: ./getting-started/
+next: ./design2_0
 ---
+
 ## 项目目录
 
 ```tree
-
-├── code-server                               #在线编辑器
-│   ├── linux
-│   └── macos
-├── config                                    #初始化数据库配置文件
-│   ├── database.${dev}.json
-├── src                                       #后端项目核心代码
-│   ├── common
-│   └── web 
-│     ├── config
-│     ├── controller
-│     ├── logic
-│     ├── model
-│     ├── service
-├── www                                        #前端项目核心代码
-│   ├── solution-platform-web
-│   └── static
-│   └── upload
-├── Dockerfile                                 #dockerFile
-├── options.json
-├── options.json
-├── pm2.json
-├── README.md
-├── startup.sh                                 #启动项目脚本
+├── code-server                                    # 在线编辑器
+│   ├── linux
+│   └── macos
+├── doc                                            # 部署文档
+├── solution-platform-web                          # 数据解决平台前端源码
+│   ├── build
+│   ├── package.json
+│   ├── public
+│   ├── scripts
+│   ├── server.js
+│   └── src
+├── solution_platform                              # 数据解决平台后端源码
+│   ├── config                                     # 初始化数据库配置文件
+│   ├── pm2.json
+│   ├── production.js
+│   ├── runtime
+│   ├── src
+│   ├── storage
+│   ├── view
+│   └── www
+├── visual_component_platform                      # 组件开发平台后端源码
+│   ├── config                                     # 初始化数据库配置文件
+│   ├── dev.js
+│   ├── password.js
+│   ├── pm2.json
+│   ├── production.js
+│   ├── runtime
+│   ├── scripts
+│   ├── src
+│   ├── storage
+│   ├── view
+│   └── www
+└── visual_component_platform_web                  # 组件开发平台前端源码
+    ├── build
+    ├── package.json
+    ├── public
+    ├── scripts
+    ├── server.js
+    ├── src
+    └── web_modules
 ```
 
 ## 技术栈
+
 #### 1、nodeJs
+
 ```
 Node.js 是一个开源与跨平台的 JavaScript 运行时环境。 它是一个可用于几乎任何项目的流行工具！
 Node.js 应用程序运行于单个进程中，无需为每个请求创建新的线程。 Node.js 在其标准库中提供了一组异步的 I/O 原生功能（用以防止 JavaScript 代码被阻塞），并且 Node.js 中的库通常是使用非阻塞的范式编写的（从而使阻塞行为成为例外而不是规范
@@ -43,24 +62,22 @@ Node.js 应用程序运行于单个进程中，无需为每个请求创建新的
 ```
 
 #### 2、thinkJs
+
 ```
 ThinkJS 是一款面向未来开发的 MVC的Node.js 框架，整合了大量的项目最佳实践，让企业级开发变得更简单、高效。从 3.0 开始，框架底层基于 Koa 2.x 实现，兼容 Koa 的所有功能
-框架比较老旧，目前官方已不再维护，可以考虑重构为目前其他优秀流行的nodejs框架，eg: Koa3、Nestjs、Eggjs、Express等
+框架比较老旧，目前官方已不再维护，可以考虑重构为目前其他优秀流行的nodejs框架，eg: Nestjs、Eggjs、Express等
 ```
 
 #### 3、redis
+
 ```
 Redis 是一个开源（BSD许可）的，内存中的数据结构存储系统，它可以用作数据库、缓存和消息中间件
 用户临时存储用户login、logout信息，可重构
 ```
 
 #### 4、mysql
+
 ```
 MySQL 是一款安全、跨平台、高效的，并与 PHP、Java 等主流编程语言紧密结合的数据库系统
 作为飞鱼平台主要的存储应用，处理90%数据存储，提供高性能的读写操作
-```
-
-#### 5、java
-```
-Java是一门面向对象编程语言，不仅吸收了C++语言的各种优点，还摒弃了C++里难以理解的多继承、指针等概念，因此Java语言具有功能强大和简单易用两个特征。Java语言作为静态面向对象编程语言的代表，极好地实现了面向对象理论，允许程序员以优雅的思维方式进行复杂的编程代码结构
 ```

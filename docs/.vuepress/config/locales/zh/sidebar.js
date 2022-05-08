@@ -48,6 +48,13 @@ module.exports = {
       collapsable: false,
       children: [
         {
+          title: "快速上手",
+          path: "/zh/flyfish/getting-started",
+          collapsable: false,
+          sidebarDepth: 1,
+          children: ["getting-started/", "getting-started/create-project"]
+        },
+        {
           title: "架构及目录",
           path: "/zh/flyfish/design/design1_0",
           collapsable: false,
@@ -63,15 +70,8 @@ module.exports = {
             {
               title: "2.1版本",
               path: "/zh/flyfish/design/design2_1"
-            },
+            }
           ]
-        },
-        {
-          title: "快速上手",
-          path: "/zh/flyfish/getting-started",
-          collapsable: false,
-          sidebarDepth: 1,
-          children: ["getting-started/", "getting-started/create-project"]
         },
         {
           title: "案例",
@@ -110,6 +110,7 @@ module.exports = {
         },
         {
           title: "内网部署",
+          path: "/zh/flyfish/deploy/deploy2_0",
           collapsable: false,
           children: [
             {

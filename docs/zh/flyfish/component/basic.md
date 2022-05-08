@@ -12,7 +12,8 @@ next: ./develop
 │   └── webpack.config.production.js
 ├── package.json
 ├── options.json
-├── assets
+├── .gitignore
+├── env.js
 └── src
     ├── Component.js
     ├── index.less
@@ -40,15 +41,19 @@ next: ./develop
 若使用在线开发, 使用独立依赖的情况下记得点击右上角的安装依赖进行预环境内的依赖安装, 避免后面保存代码导致服务打包出错。
 :::
 
-### 4. assets
+### 4. .gitignore
 
-主要存放各种静态资源
+git上传省略设置
 
-### 5. src/Component.js
+### 5. env.js
+
+大屏配置，当前组件开发大屏环境配置
+
+### 6. src/Component.js
 
 组件 code
 
-### 6. src/index.less
+### 7. src/index.less
 
 组件样式
 

@@ -56,7 +56,7 @@ git pull
 重复【安装】步骤
 ``` -->
 
-### 环境依赖
+## 环境依赖
 
 | 环境  | 说明         |
 | ----- | ------------ |
@@ -64,12 +64,12 @@ git pull
 | redis | >= 4.0.8     |
 | mysql | >= 5.6.38    |
 
-### 部署流程
+## 部署流程
 
-- [基础环境准备篇.md](https://gitee.com/CloudWise/fly-fish/blob/main/doc/基础环境准备篇.md)
-- [code_server 部署篇](https://gitee.com/CloudWise/fly-fish/blob/main/doc/code_server部署篇.md)
-- [应用平台部署篇 v2.0](https://gitee.com/CloudWise/fly-fish/blob/main/doc/应用平台部署篇v2.0.md)
-- [组件开发平台部署篇](https://gitee.com/CloudWise/fly-fish/blob/main/doc/组件开发平台部署篇.md)
+- [基础环境准备篇.md](https://gitee.com/CloudWise/fly-fish/blob/2.0/doc/基础环境准备篇.md)
+- [code_server 部署篇](https://gitee.com/CloudWise/fly-fish/blob/2.0/doc/code_server部署篇.md)
+- [应用平台部署篇 v2.0](https://gitee.com/CloudWise/fly-fish/blob/2.0/doc/应用平台部署篇v2.0.md)
+- [组件开发平台部署篇](https://gitee.com/CloudWise/fly-fish/blob/2.0/doc/组件开发平台部署篇.md)
 
 ## 升级流程
 

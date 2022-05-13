@@ -24,6 +24,7 @@
 
 ### CW-Zabbix
 CW-Zabbix是基于Zabbix5.0.4版本的二次开发项目，使得Zabbix支持向Clickhouse写入指标数据
+
 仓库地址：[CW-Zabbix](https://github.com/CloudWise-OpenSource/CW-Zabbix)
 
 ## 文档目录结构

@@ -2,12 +2,6 @@
 
 ***
 
-CICD运行状态
-
-[![pipeline status](https://git.cloudwise.com/rdep/docs/badges/master/pipeline.svg)](https://git.cloudwise.com/rdep/docs/-/commits/master)
-
-***
-
 > 本文档系统主要采用VuePress为基础搭建，官方文档地址[VuePress](https://vuepress.vuejs.org/zh/)，文章采用**Markdown格式**，目录需要手动修改
 
 ## 文档目录结构

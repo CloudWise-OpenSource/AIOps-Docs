@@ -1,14 +1,13 @@
 ---
-title: 进阶
-prev: ../advanced/component
-next: ../getting-started/
+title: 组件基础
+prev: ../case
+next: ../advanced/component
 ---
 
-组件主要包含七个部分:
+组件主要包含六个部分:
 
 - 构成
 - 开发
-- 创建
 - 基础
 - react
 - 通信

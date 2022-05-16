@@ -1,7 +1,7 @@
 ---
 title: 组件通信
 prev: ./react
-next: ./upload
+next: ../advanced/component
 ---
 
 ::: tip

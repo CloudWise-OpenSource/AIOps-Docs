@@ -1,7 +1,7 @@
 ---
 title: 进阶
-prev: ../case
-next: ./component
+prev: ../component/basic
+next: ../fag
 ---
 
 进阶主要包含两个部分:

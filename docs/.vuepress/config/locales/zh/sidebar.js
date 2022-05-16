@@ -79,24 +79,21 @@ module.exports = {
           collapsable: false
         },
         {
-          title: "进阶",
-          path: "/zh/flyfish/advanced/component",
-          collapsable: false,
-          children: ["advanced/component", "advanced/screen"]
-        },
-        {
-          title: "自定义",
+          title: "组件基础",
           path: "/zh/flyfish/component/basic",
           collapsable: false,
           children: [
             "component/basic",
             "component/develop",
-            "component/create",
             "component/related",
-            "component/react",
             "component/event",
-            "component/upload"
           ]
+        },
+        {
+          title: "进阶",
+          path: "/zh/flyfish/advanced/component",
+          collapsable: false,
+          children: ["advanced/component", "advanced/screen"]
         },
         {
           title: "常见问题解答",

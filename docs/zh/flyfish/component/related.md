@@ -1,7 +1,7 @@
 ---
-title: 组件基础
-next: ./react
-prev: ./related
+title: 组件
+next: ./event
+prev: ./develop
 ---
 
 ::: tip
@@ -139,38 +139,3 @@ prev: ./related
 | \_normalize |  normalize   |         获取标准化数据时调用         |
 |  \_destroy  |   destroy    |            组件销毁时调用            |
 | \_connectTo |      -       | 联动事件发生时, 获取变量值的钩子方法 |
-
-## FAQ
-
-### 1. 大屏和组件是如何关联的？
-
-在初始创建大屏时，初始化的组件是由初始化选择的标签决定，会拉取对应标签下关联的所有组件来作为大屏编辑时的组件。
-
-### 2. 若编辑大屏之后，其中一些组件更改了标签，会影响已编辑的大屏二次编辑吗？
-
-不会。因为大屏的配置文件中还会留存对应使用组件的 map, 并不会受到当前组件标签更改的影响。不过在上面的预备组件中无法再次拖入大屏中使用而已。
-
-### 3. 为什么数据源(`dataConfig`)需要一个`mapping`?
-
-数据配置中的`mapping`, 顾名思义, `mapping`是用来做字段映射的. 在很多情况下,组件必须要做一个映射, 才能识别数据结构, 所以在组件内部, 默认增加了`mapping`的支持.下面一个示例:
-
-```js
-// 数据
-[
-  {
-    content: "这是一串文本, 我想用文本组件显示出来"
-  }
-];
-// 对应的`dataConfig`
-{
-  mapping: {
-    text: "content";
-  }
-}
-// 组件侧读取
-data[0].text;
-```
-
----
-
-> 主要内容来自[传送门](https://git.cloudwise.com/FlyFish/VIS-Screen/-/blob/master/document/%E7%BB%84%E4%BB%B6%E7%9A%84%E5%BC%80%E5%8F%91.md)

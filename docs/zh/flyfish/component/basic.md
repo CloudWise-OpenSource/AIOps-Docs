@@ -1,6 +1,6 @@
 ---
 title: 组件构成
-prev: ../advanced/component
+prev: ../case
 next: ./develop
 ---
 

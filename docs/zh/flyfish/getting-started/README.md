@@ -8,14 +8,11 @@ next: ./create-project
 
 ### 登录
 
-想要使用`FlyFish`, 首先我们将提供给您一个默认登录账号:
+使用`FlyFish`前, 我们先自行注册一个账号登录:
 
-```bash
-$ username: admin
-$ password: utq#SpV!
-```
 
-![login](https://i.loli.net/2021/10/04/M79GPrOLwpseFIT.png)
+![login](/images/flyfish/create-project/register.png)
+<!-- ![login](https://i.loli.net/2021/10/04/M79GPrOLwpseFIT.png) -->
 
 ::: tip
 当然在您正式使用, 可自行部署之后在平台内部自行注册账号, 即可分发进行团队使用
@@ -23,11 +20,12 @@ $ password: utq#SpV!
 
 ### 首页
 
-登录后进入首页, 首页展示了应用创建、用户管理等模块页签及一键退出按钮。
+登录后进入首页, 首页展示了应用创建、用户管理（自行部署后即可使用）等模块页签及一键退出按钮。
 
-1. 首页左侧菜单分为应用管理与用户管理两大模块，应用管理包括: [项目管理](#项目管理)、 [应用开发 <Badge text="核心"/>](#应用开发)、 [组件开发 <Badge text="核心"/>](#组件开发)，用户管理包括: [用户列表 <Badge text="admin" type="warning"/>](#用户列表)、 [角色列表 <Badge text="admin"  type="warning"/>](#角色列表).
+1. 首页左侧菜单分为应用管理与用户管理两大模块，应用管理包括: [项目管理](#项目管理)、 [应用开发 <Badge text="核心"/>](#应用开发)、 [组件开发 <Badge text="核心"/>](#组件开发)，用户管理（自行部署后即可使用）包括: [用户列表 <Badge text="admin" type="warning"/>](#用户列表)、 [角色列表 <Badge text="admin"  type="warning"/>](#角色列表).
 2. 主要内容区域展示的为当前功能面板下的主要操做区域
 3. 右上角展示用户名称，单击一键退出
+4. 用户管理部署后可用，demo无展示
 
 ![index summary](/images/flyfish/getting-started/index-summary.png)
 

@@ -1,7 +1,7 @@
 ---
 title: 2.1版本
 prev: ./deploy2_0
-next: false
+next: ./deploy2_2
 ---
 
 ## 环境依赖
@@ -20,13 +20,13 @@ next: false
 | FlyfishCodeServer(在线编辑器)端口   | 8081 |
 | FlyfishServer(主后端服务)端口       | 7001 |
 
-## 部署流程
+<!-- ## 部署流程
 
 - [01-基础环境准备篇](https://gitee.com/CloudWise/fly-fish/blob/main/doc/01-基础环境准备篇.md)
 - [02-FlyFish 平台部署篇](https://gitee.com/CloudWise/fly-fish/blob/main/doc/02-FlyFish平台部署篇.md)
-- [03-code_server 部署篇](https://gitee.com/CloudWise/fly-fish/blob/main/doc/03-code_server部署篇.md)
+- [03-code_server 部署篇](https://gitee.com/CloudWise/fly-fish/blob/main/doc/03-code_server部署篇.md) -->
 
-> 或执行一键脚本：
+<!-- > 或执行一键脚本：
 
 ```bash
 # CentOS 7.5/7.6  x86-64
@@ -43,7 +43,7 @@ bash install.sh install
 
 一键卸载
 bash install.sh uninstall
-```
+``` -->
 
 ## 升级流程
 

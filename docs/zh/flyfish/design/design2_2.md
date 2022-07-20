@@ -1,5 +1,5 @@
 ---
-title: 2.1版本
+title: 2.2版本
 prev: false
 next: ./design2_2
 ---
@@ -23,6 +23,9 @@ next: ./design2_2
 │   ├── target
 │   ├── typings
 │   └── workflows
+├── lcapDataServer                                     # 后端数据处理项目源码
+│   ├── lcap-server
+│   ├── Dockerfile
 ├── lcapWeb                                        # 前端项目源码
 │   ├── FlyFish-2.1.0.conf                         # nginx 配置
 │   ├── config
@@ -76,4 +79,11 @@ Nginx (engine x) 是一个高性能的HTTP和反向代理web服务器，同时�
 ```
 MongoDB是一个基于分布式文件存储的数据库。由C++语言编写。旨在为WEB应用提供可扩展的高性能数据存储解决方案。
 作为飞鱼平台主要的存储应用，提供高性能的读写操作。
+```
+
+#### 4、java
+
+```
+Java语言作为静态面向对象编程语言的代表，极好地实现了面向对象理论，允许程序员以优雅的思维方式进行复杂的编程。
+飞鱼后端数据方面的代码由java实现。
 ```

@@ -70,6 +70,10 @@ module.exports = {
             {
               title: "2.1版本",
               path: "/zh/flyfish/design/design2_1"
+            },
+            {
+              title: "2.2版本",
+              path: "/zh/flyfish/design/design2_2"
             }
           ]
         },
@@ -86,7 +90,7 @@ module.exports = {
             "component/basic",
             "component/develop",
             "component/related",
-            "component/event",
+            "component/event"
           ]
         },
         {
@@ -118,6 +122,11 @@ module.exports = {
             {
               title: "2.1版本",
               path: "/zh/flyfish/deploy/deploy2_1",
+              collapsable: false
+            },
+            {
+              title: "2.2版本",
+              path: "/zh/flyfish/deploy/deploy2_2",
               collapsable: false
             }
           ]

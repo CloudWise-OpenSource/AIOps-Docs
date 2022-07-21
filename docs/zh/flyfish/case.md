@@ -1,6 +1,6 @@
 ---
 title: 使用案例
-prev: ./getting-started/
+prev: ./contributionGuide
 next: ./advanced/component
 tags:
   - case

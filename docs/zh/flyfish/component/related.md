@@ -1,6 +1,6 @@
 ---
 title: 组件
-next: ./event
+next: ./react
 prev: ./develop
 ---
 

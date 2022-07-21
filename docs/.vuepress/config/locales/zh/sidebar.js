@@ -78,6 +78,11 @@ module.exports = {
           ]
         },
         {
+          title: "贡献者指南",
+          path: "/zh/flyfish/contributionGuide",
+          collapsable: false
+        },
+        {
           title: "案例",
           path: "/zh/flyfish/case",
           collapsable: false
@@ -90,7 +95,9 @@ module.exports = {
             "component/basic",
             "component/develop",
             "component/related",
-            "component/event"
+            "component/event",
+            "component/react",
+            "component/upload"
           ]
         },
         {

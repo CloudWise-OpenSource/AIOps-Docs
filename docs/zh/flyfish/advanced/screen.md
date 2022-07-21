@@ -1,7 +1,7 @@
 ---
 title: 大屏进阶
 prev: ./component
-next: ../component
+next: ../component/
 ---
 
 ## 创建一个大屏

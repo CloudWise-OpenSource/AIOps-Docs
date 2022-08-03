@@ -26,25 +26,26 @@ next: ./design2_2
 ├── lcapDataServer                                     # 后端数据处理项目源码
 │   ├── lcap-server
 │   ├── Dockerfile
-├── lcapWeb                                        # 前端项目源码
-│   ├── FlyFish-2.1.0.conf                         # nginx 配置
+├── lcapWeb                                            # 前端项目源码 (-npm install/build)
+│   ├── FlyFish-2.1.0.conf                   # nginx 配置
 │   ├── config
 │   ├── postcss.config.js
 │   ├── scripts
 │   ├── src
 │   ├── themes
 │   └── webpack.config.js
-└── lcapWww                                        # 飞鱼平台文件资源存储目录
-    ├── application_build
-    ├── application_tpl
-    ├── applications
-    ├── build.js
-    ├── common
-    ├── component_tpl
-    ├── components
-    ├── scripts
-    ├── target
-    └── web
+    └── www                                   # 飞鱼平台文件资源存储目录 - bulid需要
+                    ├── application_build
+                    ├── application_tpl
+                    ├── applications
+                    ├── build.js
+                    ├── common
+                    ├── component_tpl
+                    ├── components
+                    ├── scripts
+                    ├── target
+                    └── web
+               └── lcapWeb                              #前端项目打包部署目录-资源访问目录。nginx
 ```
 
 ## 技术栈

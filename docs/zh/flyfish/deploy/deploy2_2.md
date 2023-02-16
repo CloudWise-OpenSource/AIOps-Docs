@@ -1,7 +1,7 @@
 ---
 title: 2.1版本
 prev: ./deploy2_1
-next: false
+next: ./deploy3_0
 ---
 
 ## 环境依赖

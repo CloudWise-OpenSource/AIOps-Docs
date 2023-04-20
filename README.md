@@ -12,11 +12,6 @@
 
 仓库地址：[FlyFish仓库地址](https://github.com/CloudWise-OpenSource/FlyFish)
 
-### 摩尔平台
-摩尔平台是一套云服务管理平台，它为开发者提供资源分配-环境管理-编码、部署，并支持开源服务、组件、算法的无缝接入，个性化服务需求以流程化的方式完成衔接，使开发者专注于业务需求的定制，提高开发者的工作效率。
-
-注册地址：[摩尔平台注册地址](http://moore.cloudwise.com/app-web/login)
-
 ### GAIA数据集
 全称Generic AIOps Atlas，是一个用于分析异常检测、日志分析、故障定位等运维问题的全量数据集。
 

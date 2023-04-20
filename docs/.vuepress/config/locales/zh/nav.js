@@ -1,6 +1,5 @@
 module.exports = [
   { text: 'FlyFish', link: '/zh/flyfish/' },
-  { text: '摩尔平台', link: '/zh/' },
   { text: 'GAIA', link: '/zh/gaia/' },
   { text: 'CW-Zabbix', link: '/zh/cwzabbix/' },
   { text: 'Hours', link: '/zh/hours/' },

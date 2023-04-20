@@ -1,5 +1,4 @@
 module.exports = [
-  { text: 'Moore', link: '/en/' },
   { text: 'GAIA', link: '/en/gaia/' },
   { text: 'Hours', link: '/en/hours/' },
   { text: 'CW-Zabbix', link: '/zh/cwzabbix/' },
